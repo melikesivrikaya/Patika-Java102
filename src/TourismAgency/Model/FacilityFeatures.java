@@ -1,6 +1,6 @@
 package TourismAgency.Model;
 
-import Patika.Java.development.TourismAgency.Helper;
+import TourismAgency.Helper;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
