@@ -167,10 +167,12 @@ public class HotelGUI extends JFrame{
 
 
         // Room
-
+        mdl_room_list = new DefaultTableModel();
         Object[] roomColum = {"ID","M2","BAD PIECE","STOK","TV","MINIBAR","CONSOL","PROJECTION","CASEE"};
         mdl_room_list.setColumnIdentifiers(roomColum);
         tbl_room_list.setModel(mdl_room_list);
+        tbl_room_list.getColumnModel().getColumn(0).setMaxWidth(25);
+        tbl_room_list.getTableHeader().setReorderingAllowed(false);
         refleshRoomList();
 
     }
